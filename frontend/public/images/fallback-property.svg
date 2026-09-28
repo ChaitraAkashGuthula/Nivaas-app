@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5efe6" />
+      <stop offset="100%" stop-color="#e8dfd3" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)" />
+  <g transform="translate(350, 180)" fill="#d47942" opacity="0.85">
+    <path d="M50 0 L10 35 L22 35 L22 80 L78 80 L78 35 L90 35 Z" fill="#d47942" />
+    <rect x="38" y="45" width="24" height="35" fill="#f5efe6" rx="4" />
+  </g>
+  <text x="400" y="300" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#231f1c" text-anchor="middle">NIVAAS Property Preview</text>
+  <text x="400" y="330" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#756f68" text-anchor="middle">Local Listing · Kakinada &amp; East Godavari</text>
+</svg>

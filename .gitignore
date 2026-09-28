@@ -1,0 +1,116 @@
+# ===================================================
+# NIVAAS – Production .gitignore
+# ===================================================
+
+# ── Node / Package Manager ──────────────────────────
+node_modules/
+.pnpm-store/
+.npm/
+.yarn/
+
+# ── Build Outputs ───────────────────────────────────
+dist/
+build/
+*.dist
+.vite/
+.cache/
+.parcel-cache/
+
+# ── Environment / Secrets ───────────────────────────
+# NEVER commit real environment files
+.env
+.env.*
+
+# Safe to commit – contains only variable names, no values
+!.env.example
+
+
+# ── Logs ────────────────────────────────────────────
+logs/
+*.log
+dev-server.log
+srv-out.log
+srv-err.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Manus debug-collector logs (dev-time only, potentially large)
+.manus-logs/
+
+# ── Database ────────────────────────────────────────
+# Local SQLite files — not used in production (MySQL), but ignore as safety net
+*.db
+*.sqlite
+*.sqlite3
+
+# ── TypeScript ──────────────────────────────────────
+*.tsbuildinfo
+
+# ── Coverage ────────────────────────────────────────
+coverage/
+*.lcov
+.nyc_output/
+
+# ── OS / Editor Files ───────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Backup files ────────────────────────────────────
+*.bak
+
+# ── Runtime / Temporary ─────────────────────────────
+pids/
+*.pid
+*.seed
+*.pid.lock
+tmp/
+temp/
+
+# ── Misc Tool Caches ────────────────────────────────
+.eslintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.node_repl_history
+*.tgz
+.yarn-integrity
+jspm_packages/
+
+# ── Framework-specific ──────────────────────────────
+.next/
+.nuxt/
+.gatsby-cache/
+.storybook-out/
+.out/
+
+# ── Manus Platform Files ────────────────────────────
+# (Manus internal tooling – not part of the project source)
+.webdev/
+client/public/__manus__/version.json
+.project-config.json
+template.json
+
+# ── Private credential files ────────────────────────
+service-account.json
+credentials.json
+google-credentials.json
+firebase-adminsdk-*.json
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
